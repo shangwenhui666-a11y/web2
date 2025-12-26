@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账号登录</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        
+        /* 导航样式 */
+        .black-nav { background: #333; padding: 10px 0; }
+        .wrap { width: 1226px; margin: 0 auto; display: flex; justify-content: space-between; }
+        .black-nav-left, .black-nav-right { display: flex; list-style: none; }
+        .black-nav li { margin: 0 8px; }
+        .black-nav a { color: #b0b0b0; text-decoration: none; }
+        .black-nav a:hover { color: #fff; }
+        
+        /* 白色导航栏 - 与其他页面保持一致 */
+        .white-nav { background: #fff; padding: 20px 0; border-bottom: 1px solid #e0e0e0; }
+        .white-nav .wrap { align-items: center; }
+        .logo img { height: 40px; }
+        .nav-bar ul { display: flex; list-style: none; margin-left: 40px; }
+        .nav-bar li { margin: 0 15px; }
+        .nav-bar a { color: #333; text-decoration: none; }
+        .nav-bar a:hover { color: #ff6700; }
+        .search { margin-left: auto; }
+        .search input { padding: 8px; border: 1px solid #e0e0e0; }
+        .search button { padding: 8px; border: 1px solid #e0e0e0; background: #fff; cursor: pointer; }
+        
+        /* 登录区域样式 */
+        .login-container { width: 1226px; margin: 50px auto; display: flex; background: #fff; border: 1px solid #e0e0e0; }
+        .login-bg { 
+            flex: 1; 
+            background: url('img/1118.jpg') no-repeat center; /* 使用现有小米产品图片 */
+            background-size: cover; 
+            min-height: 500px; /* 确保图片区域有足够高度 */
+        }
+        .login-form { flex: 1; padding: 50px; }
+        .form-tabs { display: flex; margin-bottom: 30px; }
+        .form-tabs a { flex: 1; text-align: center; font-size: 20px; text-decoration: none; color: #333; padding-bottom: 10px; }
+        .form-tabs a.active { color: #ff6700; border-bottom: 2px solid #ff6700; }
+        .form-group { margin-bottom: 20px; }
+        .form-group input { width: 100%; padding: 10px; border: 1px solid #e0e0e0; }
+        .login-btn { width: 100%; padding: 12px; background: #ff6700; color: #fff; border: none; cursor: pointer; font-size: 16px; }
+        .form-links { display: flex; justify-content: space-between; margin: 15px 0; }
+        .form-links a { color: #666; text-decoration: none; font-size: 14px; }
+        .form-links a:hover { color: #ff6700; }
+        .other-login { text-align: center; margin-top: 30px; }
+        .other-login p { color: #999; margin-bottom: 15px; }
+        .other-login a { margin: 0 10px; }
+        .other-login img { width: 30px; height: 30px; }
+        
+        /* 页脚样式 */
+        .footer-service { margin-top: 50px; padding: 30px 0; background: #f5f5f5; }
+        .footer-service ul { display: flex; list-style: none; justify-content: center; }
+        .footer-service li { margin: 0 20px; }
+        .footer-service a { color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <!-- 黑色导航 start -->
+    <div class="black-nav">
+   <div class="wrap">
+       <ul class="black-nav-left">
+           <li><a href="#"><span></span></a></li>
+           <li><a href="#"><span></span></a></li>
+           <li><a href="#"><span></span></a></li>
+           <li><a href="#"><span></span></a></li>
+           <li><a href="#"><span></span></a></li>
+           <li><a href="#"><span></span></a></li>
+           <li><a href="#"><span></span></a></li>
+         
+       </ul>
+       <div class="black-nav-right">
+   	<li><a href="index.html" >首页</a><span>|</span></li>
+   	     <li><a href="guanwang.html" >官网</a><span>|</span></li>
+   	     <li><a href="detail1.html" >详情</a><span>|</span></li>
+   	     <li><a href="deal.html" >结算</a><span>|</span></li>
+   	<li><a href="./news.html" >新闻</a><span>|</span></li>
+   	<li><a href="./login.html" >登录</a><span>|</span></li>
+   	
+   	<li><a href="./register.html" >注册</a><span>|</span></li>
+   	<li><a href="./detail.html" >详情</a><span>|</span></li>
+   	     </div>
+   </div>
+    </div>
+    <!-- 黑色导航 end -->
+
+    <!-- 白色导航栏 - 与其他页面保持一致 -->
+    <div class="white-nav">
+        <div class="wrap">
+            <div class="logo">
+                <img src="img/logo.png" alt="小米logo">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">电视</a></li>
+                    <li><a href="#">笔记本</a></li>
+                    <li><a href="#">平板</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="搜索产品">
+                <button>🔍</button>
+            </div>
+        </div>
+    </div>
+    <!-- 白色导航栏 end -->
+
+    <!-- 登录主体内容区 -->
+    <div class="login-container">
+        <div class="login-bg"></div> <!-- 左侧图片区域 -->
+        <div class="login-form">
+            <div class="form-tabs">
+                <a href="#" class="active">账号登录</a>
+                <a href="#">注册账号</a>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" placeholder="邮箱/手机号码/ID">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            
+            <button class="login-btn">登录</button>
+            
+            <div class="form-links">
+                <a href="#">忘记密码?</a>
+                <a href="#">手机号码登录</a>
+            </div>
+            
+            <div class="other-login">
+                <p>其他登录方式</p>
+                <a href="#"><img src="img/微信.jpg" alt="微信登录"></a>
+                <a href="#"><img src="img/支付宝.webp" alt="支付宝登录"></a>
+                <a href="#"><img src="img/QQ.jpg" alt="QQ登录"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚模块 -->
+    <div class="footer-service">
+        <div class="wrap">
+            <ul>
+                <li><a href="#">预约维修服务</a></li>
+                <li><a href="#">7天无理由退货</a></li>
+                <li><a href="#">15天免费换货</a></li>
+                <li><a href="#">满99元免运费</a></li>
+                <li><a href="#">520余家售后网点</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

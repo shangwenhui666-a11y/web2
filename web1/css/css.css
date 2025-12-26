@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none; /*去掉a标签的下划线 */
+
+}
+/* 让图片适应屏幕宽度 */
+.adapt-screen {
+    width: 100%; /* 宽度占满父容器（屏幕） */
+    height: auto; /* 高度自动计算，保持原始比例，避免变形 */
+    display: block; /* 去除图片底部默认的空白间隙 */
+    max-width: 100%; /* 限制最大宽度不超过原始尺寸（防止图片被过度拉伸模糊） */
+}
+.black-nav{
+    width: 100%;/*宽*/
+    height: 40px;/*高*/
+    line-height: 40px; /*内容上下居中*/
+    background-color: #333;/*背景颜色*/
+    font-size: 16px;/*字体大小*/
+}
+.black-nav .wrap .black-nav-right a{
+    color: #e0e0e0;
+}
+.black-nav .wrap .black-nav-left span{
+    color: #e0e0e0;
+}
+.black-nav .wrap .black-nav-right a:hover{
+    color: #fff;
+}
+.black-nav .wrap .black-nav-left span:hover{
+    color: #fff;
+}
+
+.wrap{
+    width: 1226px;
+    margin: 0 auto;
+}
+.black-nav .wrap .black-nav-left{
+    float: left;
+}
+.black-nav .wrap .black-nav-right{
+    float: right;
+}
+.black-nav .wrap li{
+    float: left;
+}
+.black-nav .wrap li span{
+    color: #424242;
+    margin: 0 3.6px;
+}
+
+/* 黑色导航 end */
+/* <!-- 白色导航 start --> */
+.white-nav{/*定义了一个白色导航栏的基本样式*/
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+.logo{/*尺寸、背景颜色、浮动方式、溢出隐藏*/
+    width: 100px;
+    height: 80px;
+    background-color: #f8f8f8;
+    float: left;
+    overflow: hidden;/*隐藏溢出*/
+    position: relative;
+    margin-top: 5px;
+    border-radius: 13px;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.mi-logo{
+    left: 0;
+}
+.white-nav .nav-bar .tpbox{
+    width: 150px;
+    height: 90px;
+    float: left;
+}
+.white-nav .nav-bar{
+    width: 810px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+.white-nav .search{/*搜索区域样式*/
+    width: 295px;
+    height: 100px;
+    float: right;
+}
+
+.white-nav .nav-bar li{/*导航栏列表样式*/
+    float: left;
+}
+.white-nav .nav-bar li a{/*字体大小颜色、鼠标悬停颜色*/
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;/*定义元素内容与边框之间的距离*/
+}
+.white-nav .nav-bar li a:hover{
+    color: #ff6700;
+}
+.white-nav .wrap .search input{
+    width: 244px;
+    height: 50px;
+    float: left;/*控制元素的左右位置*/
+    border: 1px solid #e0e0e0;/*元素边框*/
+    box-sizing: border-box;/*更改元素的整体尺寸，不用考虑边框和内边距影响*/
+    margin-top: 25px;/*元素上方的外边距*/
+    padding: 0 10px;
+    outline: none;/*元素的轮廓*/
+    border-right: 0;/*右边框的样式*/
+}
+.white-nav .wrap .search button{/*搜索按钮样式*/
+    width: 52px;
+    height: 50px;
+    float: right;
+    border: 1px solid #e0e0e0;
+    margin-top: -50px;
+}
+.white-nav .wrap .search button>img{/*搜索按钮图片样式*/
+    width: 45px;
+    height: 45px;
+}
+/* <!-- 白色导航 end --> */
+/* <!-- 垂直导航栏start --> */
+.vertical{/*容器的基本样式*/
+    width: 100%;
+    height: 460px;
+}
+.vertical>.wrap img{
+    width: 100%;
+    height: 460px;
+}
+.vertical>.wrap{/*元素的位置为相对定义*/
+    position: relative;/*设置为相对定位，会根据原始位置偏移*/
+}
+.slide{/*划定板块的样式*/
+    width: 234px;
+    height: 420px;
+    padding: 20px 0;
+    background-color: rgba(105, 101, 101, 0.6);
+    position: absolute;/*设置为绝对位置*/
+    left: 0;/*左侧偏移量*/
+    top: 0;/*元素的顶部偏移量*/
+}
+.slide>ul>li{
+    height: 42px;
+    line-height: 42px;
+    text-align: 30px;/*板块元素宽度*/
+    font-size: 14px;
+    padding-left: 30px;/*左侧内边距*/
+}
+.slide>ul>li>a{
+    color: #fff;
+    float: left;/*左浮动*/
+}
+.slide>ul>li:hover{/*当鼠标悬停时设置背景颜色*/
+    background-color: #ff6700;
+}
+/* <!-- 垂直导航栏end --> */
+/* <!-- 广告块 start --> */
+.box{
+    width: 1228px;
+    height: 180px;
+    padding: 14px 0;
+    background-color: #fff;
+    margin: auto;
+}
+.box .adbox{
+    width: 238px;
+    height: 180px;
+    padding-right: 3px;
+    float: left;
+}
+.box .adbox img{
+    width: 100%;
+    height: 100%;
+}
+.imgbox{
+    width: 319px;
+    height: 180px;
+    float: left;
+    padding-left: 10px;
+
+}
+.box .imgbox img{
+    width:100%;
+    height: 100%;
+}
+
+/* <!-- 广告块 end --> */
+/* 内容模块start */
+.box1{
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 4px 0 12px;
+}
+/* 内容模块end */
+/* <!-- 手机模块 start --> */
+.title{
+    text-align: left;
+    color: #333;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+
+}
+.phone-box{
+    width: 100%;
+    height: 614px;
+
+}
+.phone-box-left{
+    width: 235px;
+    height: 614px;
+    float: left;
+}
+.phone-box-left a>img{
+    width: 100%;
+    height: 614px;
+}
+
+.phone-box-right{
+    width: 984px;
+    height: 620px;
+    float: right;
+}
+.item{
+    width: 232px;
+    height: 300px;
+    margin: 0 0 14px 14px;
+    background: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    float: left;
+    transition: all 0.2s linear;
+}
+
+.item img{
+    width: 160px;
+    height: 160px;
+    margin-left: 35px;
+}
+.item-name{
+    width: 214px;
+    height: 21px;
+    color: #333;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 auto 2px;
+}
+.item-desc{
+    width: 214px;
+    height: 18px;
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.item-price{
+    width: 214px;
+    height: 18px;
+    color: #ff6700;
+    font-size: 5px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+/* <!-- 手机模块 end--> */
+
+/* 页脚模块start */
+.footer-service{
+    width: 100%; height: 25px;
+    line-height: 25px; padding: 27px 0;
+    border-bottom: 1px solid	#e0e0e0;
+}	
+.footer-service li{
+    float: left; width: 20%;
+    border-right: 1px solid	#b0b0b0;	
+    box-sizing: border-box;
+}
+.footer-service li:last-child{
+    border-right: 0;
+}
+.footer-service i{
+    font-size: 24px; 
+    margin-right: 6px;}
+.footer-service a{
+    color: #616161;
+}
+.footer-service a:hover{
+    color:#ff6700;	
+}
+.footer-link{
+    width: 100%;
+    height: 400px; 
+    padding: 40px 0;
+}
+.footer-link dl{
+    width: 160px;
+    float: left;
+    display: block;
+}
+.footer-link dl dt{
+    margin: 0 0 25px;
+    font-size: 15px; 
+    color: #757575;
+}
+.footer-link dl dd{
+    margin-top: 10px;
+}
+.footer-link dl dd a{
+    text-decoration: none;
+    color: #757575;
+    font-size: 13px;
+}
+.footer-link dl dd a:hover{
+    color: #ff6700;
+}
+.contact{
+    width: 250px;
+    height: 210px;
+    float: right;
+}
+.contact .footer-aside{
+    width: 250px;
+    height: 111px;
+    border-left: 1px solid	#e0e0e0;	
+    float: right;
+    color:	#616161;	
+}
+.contact .tel{
+    font-size: 22px; 
+    line-height: 22px;
+    text-align: center;
+    color:#ff6700;	
+    margin-bottom: 5px;
+}
+.contact p{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.kefu{
+    display: block; width: 120px; height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff6700;	
+    box-sizing: border-box; 
+    margin: 0 auto;
+    color:#ff6700;	
+    font-size: 12px;
+    transition: all 0.4s;
+}
+.kefu:hover{
+    background:	#ff6700;	
+    border-color:#ff6700;	
+    color:#fff;
+}
+.follow{
+    font-size: 12px; 
+    margin-top: 10px;
+}
+
+/* 页脚模块end */

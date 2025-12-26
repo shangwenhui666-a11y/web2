@@ -1,0 +1,93 @@
+
+/* 邮箱，手机号码，小米ID */
+.center_2{
+    width: 355px;
+    height: 60px;
+    padding:35px 0px 20px;
+    border-radius: 5px;
+}
+.center_2 input{
+    width: 355px;
+    height: 50px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.center_3{
+    width: 355px;
+    height: 60px;
+    padding: 0px 0px 20px;
+    border-radius: 5px;
+}
+.center_3 input{
+    width: 355px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: #ddd;
+}
+/* 用户协议 */
+.center_4{
+    width: 355px;
+    height: 25px;
+    padding: 0px 0px 20px;
+}
+.center_4 .hui{
+    color: #838383;
+}
+/* 登录按钮 */
+.center_5{
+    width: 355px;
+    height: 60px;
+    margin: 0px 0px 10px;
+}
+.center_5 input{
+    width: 355px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: lightsalmon;
+    font-size: 18px;
+    border: 1px solid lightsalmon;
+    color: white;
+}
+/* 忘记密码，手机号码登录 */
+.center_6{
+    width: 355px;
+    height: 40px;
+}
+.center_6 a{
+    text-decoration: none;
+    color: #ff5c00;
+    line-height: 40px;
+    text-align: center;
+}
+/* 忘记密码 */
+.center_6 .wjmm{
+    float: left;
+}
+/* 手机号码登陆 */
+.center_6 .sjhmdl{
+    float: right;
+}
+/* 其他登陆方式 */
+.center_7{
+    width: 360px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+/* 图标 */
+.center_8{
+    width: 360px;
+    height: 50px
+}
+.center_8 a{
+    text-decoration: none;
+}
+.center_8 img{
+    width: 360px;
+    height: 50px;
+}

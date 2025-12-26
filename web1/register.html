@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米账号注册</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        
+        /* 导航样式 */
+        .black-nav { background: #333; padding: 10px 0; }
+        .wrap { width: 1226px; margin: 0 auto; display: flex; justify-content: space-between; }
+        .black-nav-left, .black-nav-right { display: flex; list-style: none; }
+        .black-nav li { margin: 0 8px; }
+        .black-nav a { color: #b0b0b0; text-decoration: none; }
+        .black-nav a:hover { color: #fff; }
+        /* 白色导航栏 - 与其他页面保持一致 */
+        .white-nav { background: #fff; padding: 20px 0; border-bottom: 1px solid #e0e0e0; }
+        .white-nav .wrap { align-items: center; }
+        .logo img { height: 40px; }
+        .nav-bar ul { display: flex; list-style: none; margin-left: 40px; }
+        .nav-bar li { margin: 0 15px; }
+        .nav-bar a { color: #333; text-decoration: none; }
+        .nav-bar a:hover { color: #ff6700; }
+        .search { margin-left: auto; }
+        .search input { padding: 8px; border: 1px solid #e0e0e0; }
+        .search button { padding: 8px; border: 1px solid #e0e0e0; background: #fff; cursor: pointer; }
+        
+        /* 注册区域样式 */
+        .register-container { width: 1226px; margin: 50px auto; display: flex; background: #fff; border: 1px solid #e0e0e0; }
+        .register-bg { 
+            flex: 1; 
+            background: url('img/dianshi.jpg') no-repeat center; /* 使用现有小米广告图片 */
+            background-size: cover; 
+        }
+        .register-form { flex: 1; padding: 50px; }
+        .form-tabs { display: flex; margin-bottom: 30px; }
+        .form-tabs a { flex: 1; text-align: center; font-size: 20px; text-decoration: none; color: #333; padding-bottom: 10px; }
+        .form-tabs a.active { color: #ff6700; border-bottom: 2px solid #ff6700; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group select { width: 100%; padding: 10px; border: 1px solid #e0e0e0; background-color: #fff; }
+        
+        .phone-group { display: flex; gap: 10px; }
+        .phone-code { width: 30%; padding: 10px; border: 1px solid #e0e0e0; text-align: center; background-color: #f5f5f5; }
+        .phone-input { flex: 1; padding: 10px; border: 1px solid #e0e0e0; }
+        
+        .verify-group { display: flex; gap: 10px; }
+        .verify-input { flex: 2; padding: 10px; border: 1px solid #e0e0e0; }
+        .verify-btn { width: 30%; padding: 10px; border: 1px solid #e0e0e0; background-color: #f5f5f5; cursor: pointer; }
+        
+        .register-btn { width: 100%; padding: 12px; background: #ff6700; color: #fff; border: none; cursor: pointer; font-size: 16px; margin-top: 20px; }
+        
+        .agreement { margin: 15px 0; font-size: 14px; color: #666; }
+        .agreement a { color: #ff6700; text-decoration: none; }
+        
+        .help-link { text-align: center; margin-top: 30px; }
+        .help-link a { color: #666; text-decoration: none; font-size: 14px; }
+        .help-link a:hover { color: #ff6700; }
+        
+        /* 页脚样式 */
+        .footer-service { margin-top: 50px; padding: 30px 0; background: #f5f5f5; }
+        .footer-service ul { display: flex; list-style: none; justify-content: center; }
+        .footer-service li { margin: 0 20px; }
+        .footer-service a { color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <!-- 黑色导航 start -->
+    <div class="black-nav">
+        <div class="wrap">
+            <ul class="black-nav-left">
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+              
+            </ul>
+            <div class="black-nav-right">
+        	<li><a href="index.html" >首页</a><span>|</span></li>
+        	     <li><a href="guanwang.html" >官网</a><span>|</span></li>
+        	     <li><a href="detail1.html" >详情</a><span>|</span></li>
+        	     <li><a href="deal.html" >结算</a><span>|</span></li>
+        	<li><a href="./news.html" >新闻</a><span>|</span></li>
+        	<li><a href="./login.html" >登录</a><span>|</span></li>
+        	
+        	<li><a href="./register.html" >注册</a><span>|</span></li>
+        	<li><a href="./detail.html" >详情</a><span>|</span></li>
+        	     </div>
+        </div>
+    </div>
+    <!-- 黑色导航 end -->
+
+    <!-- 白色导航栏 - 与其他页面保持一致 -->
+    <div class="white-nav">
+        <div class="wrap">
+            <div class="logo">
+                <img src="img/logo.png" alt="小米logo">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">电视</a></li>
+                    <li><a href="#">笔记本</a></li>
+                    <li><a href="#">平板</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="搜索产品">
+                <button>🔍</button>
+            </div>
+        </div>
+    </div>
+    <!-- 白色导航栏 end -->
+
+    <!-- 注册主体内容区 -->
+    <div class="register-container">
+        <div class="register-bg"></div>
+        <div class="register-form">
+            <div class="form-tabs">
+                <a href="login.html">账号登录</a>
+                <a href="#" class="active">注册账号</a>
+            </div>
+            
+            <div class="form-group">
+                <select>
+                    <option value="CN">中国大陆</option>
+                    <option value="HK">中国香港</option>
+                    <option value="TW">中国台湾</option>
+                    <option value="US">美国</option>
+                    <option value="JP">日本</option>
+                </select>
+            </div>
+            
+            <div class="phone-group">
+                <div class="phone-code">+86</div>
+                <input type="tel" class="phone-input" placeholder="请输入手机号码">
+            </div>
+            
+            <div class="verify-group">
+                <input type="text" class="verify-input" placeholder="请输入验证码">
+                <button class="verify-btn">获取验证码</button>
+            </div>
+            
+            <div class="agreement">
+                点击注册即表示您同意<a href="#">用户协议</a>和<a href="#">隐私政策</a>
+            </div>
+            
+            <button class="register-btn">立即注册</button>
+            
+            <div class="help-link">
+                <a href="#">收不到验证码？</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚模块 -->
+    <div class="footer-service">
+        <div class="wrap">
+            <ul>
+                <li><a href="#">预约维修服务</a></li>
+                <li><a href="#">7天无理由退货</a></li>
+                <li><a href="#">15天免费换货</a></li>
+                <li><a href="#">满99元免运费</a></li>
+                <li><a href="#">520余家售后网点</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

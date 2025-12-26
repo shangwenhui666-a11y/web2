@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 左边背景 */
+.sider{
+    width: 325px;
+    height: 800px;
+    float: left;
+}
+.sider img{
+    width: 325px;
+    height: 800px;
+}
+
+.sider_1{
+    width: 1110px;
+    height: 800px;
+    float: left;
+}
+/* 导航栏 */
+.header{
+    width: 1110px;
+    height: 50px;
+    float: left;
+    padding: 20px;
+    overflow: hidden;
+}
+/* 小米logo */
+.header .milogo{
+    display: inline-block;
+    width: 155px;
+    height: 40px;
+}
+.header .milogo img{
+    width: 155px;
+    height: 40px;
+}
+.header .nav{
+    width: 400px;
+    height: 40px;
+    float: right;
+}
+.header .nav .navbig{
+    width: 56px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #838383;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.header .nav .navbig:hover{
+    color: #ff5c00;
+}
+.header .nav .nav_1{
+    height: 15px;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    margin: 13px 20px;
+}
+.header .nav .nav_2{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+.header .nav .nav_2 .nav_2big{
+    width: 95px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    color: #838383;
+    font-size: 14px;
+    text-decoration: none;
+}
+.header .nav .nav_2big:hover{
+    color: #ff5c00;
+}
+/* 内容 */
+.container{
+    width: 450px;
+    height: 560px;
+    margin: 100px auto;
+    background-color: rgba(251, 251, 251, 0.922);
+    border-radius: 15px;
+}
+/* 二维码 */
+ .container .QR_code{
+    width: 64px;
+    height: 64px;
+    float: right;
+}
+.container .QR_code img{
+    width: 64px;
+    height: 64px;
+}
+/* 中间部分 */
+.center{
+    width: 360px;
+    height: 490px;
+    margin: auto;
+    padding: 50px;
+}
+/* 登录，注册 */
+.center_1 a{
+    text-decoration: none;
+}
+.center_1 h2{
+    display: inline-block;
+    margin-right: 20px;
+}
+.center_1 .denglu{
+    color: #838383;
+}
+.center_1 .zhuce{
+    border-bottom: 2px solid #ff5c00;
+    color: black;
+}
